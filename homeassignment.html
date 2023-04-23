@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #information{
+          border: 2px solid black;
+          padding: 10px;
+          margin: 10px;
+        }
+        #education{
+          border: 2px solid black;
+          padding: 10px;
+          margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Bio Data</h1>
+    <form>
+    <fieldset id="information">
+        <legend>personal information</legend>
+    <label for="firstName">FirstName:</label>
+    <input type="text" placeholder="First Name" id="firstName">
+    
+    <label for="lastName">LastName:</label>
+    <input type="text" placeholder="Last Name" id="lastName">
+    <br><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender">
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender">
+
+    <label for="others">others</label>
+    <input type="radio" id="others" name="sgender">
+    <br><br>
+
+    <label for="dateOfBirth">Date of Birth</label>
+    <input type="date" id="dateOfBirth">
+
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Enter Your Email" id="email">
+    <br><br>
+
+    <label for="phone">Phone</label>
+    <input type="tel" placeholder="+91" maxlength="10">
+    <br><br><br>
+
+</fieldset>
+
+<fieldset id="education">
+    <legend>Education</legend>
+    <label for="schoolName">school Name</label>
+    <input type="text" placeholder="schoolName" id="schoolName">
+    <br><br>
+
+    <label for="class">class</label>
+    <input type="text" placeholder="Enter Class" id="class"> 
+    <br><br>
+    <label for="stream">stream:</label>
+    <select id="stream" name="stream">
+        <option value="">science</option>
+        <option value="">commerce</option>
+        <option value="">arts</option>        
+    </select>
+    <br><br>
+
+    <label for="marksheet">Marksheet:</label>
+    <input type="file">
+</fieldset>
+
+<button >Submit</button>
+</form>
+</body>
+</html>
